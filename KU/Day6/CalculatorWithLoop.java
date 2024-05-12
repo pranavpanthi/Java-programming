@@ -13,12 +13,14 @@ public class CalculatorWithLoop {
         return ((a * b) * c) * d;
     }
 
-    public static double divide(double a, double b, double c, double d) {
+    public double divide(double a, double b, double c, double d) {
         return ((a / b) / c) / d;
     }
     
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
+        CalculatorWithLoop divideObject = new CalculatorWithLoop();
 
         System.out.println("Enter the first number : ");
         double a = input.nextDouble();
@@ -42,7 +44,7 @@ public class CalculatorWithLoop {
         }else if (op.equals("*")) {
             System.out.println("Multiplication: " + multiply(a, b, c, d));
         }else if (op.equals("/")) {
-            System.out.println("Division: " + divide(a, b, c, d));            
+            System.out.println("Division: " + divideObject.divide(a, b, c, d));            
         }else{
             System.out.println("Input error!!!");
         }
