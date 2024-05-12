@@ -8,6 +8,5 @@ public class Student {
 
     public String print() {
         return "Name: " + name + ", Roll-no: " + rollNumber + ", Department: " + department;
-
     }
 }

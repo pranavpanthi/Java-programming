@@ -5,6 +5,6 @@ public class Application {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your name : " );
         input.nextLine();
-
+        
     }
 }
