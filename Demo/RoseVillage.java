@@ -6,35 +6,49 @@ public class RoseVillage {
 
     private int numberOfFloor;
 
+    private static int totalHomes = 0;
+
+    public static void printTotalHomes() {
+        System.out.println("Total homes = " + totalHomes);
+    }
+
     public static void main(String[] args) {
 
         RoseVillage home1 = new RoseVillage();
         home1.homeOwner = "Pranav Panthi";
         home1.homeNumber = 1;
         home1.numberOfFloor = 3;
+        RoseVillage.totalHomes += 1;
 
         RoseVillage home2 = new RoseVillage();
         home2.homeOwner = "Pramod Subedi"; 
         home2.homeNumber = 2;
         home2.numberOfFloor = 2;
+        RoseVillage.totalHomes += 1;
 
         RoseVillage home3 = new RoseVillage();
         home3.homeOwner = "Prahlad Panthi";
         home3.homeNumber = 3;
         home3.numberOfFloor = 1;
+        RoseVillage.totalHomes += 1;
 
-        printDetailsUsingAttributes(home1.homeOwner, home1.homeNumber, home1.numberOfFloor);
-        printDetailsUsingAttributes(home2.homeOwner, home2.homeNumber, home2.numberOfFloor);
-        printDetailsUsingAttributes(home3.homeOwner, home3.homeNumber, home3.numberOfFloor);
+        // RoseVillage.printDetailsUsingAttributes(home1.homeOwner, home1.homeNumber, home1.numberOfFloor);
+        // printDetailsUsingAttributes(home2.homeOwner, home2.homeNumber, home2.numberOfFloor);
+        // printDetailsUsingAttributes(home3.homeOwner, home3.homeNumber, home3.numberOfFloor);
 
-        printDetailsUsingObject(home1);
-        printDetailsUsingObject(home2);
-        printDetailsUsingObject(home3);
+        // printDetailsUsingObject(home1);
+        // printDetailsUsingObject(home2);
+        // printDetailsUsingObject(home3);
 
-        System.out.println("Printing two details of home togather : ");
+        // System.out.println("Printing two details of home togather : ");
 
-        printDetails(home1, home2);
-        printDetails(home3, home3);
+        // printDetails(home1, home2);
+        // printDetails(home3, home3);
+
+        RoseVillage.printTotalHomes();
+        home1.totalHomes = 10;
+        home1.printTotalHomes();
+        home2.printTotalHomes();
 
     }
 
