@@ -16,6 +16,7 @@ public class StringDemo {
         // method chaining
         boolean isPranav = sc.next().equalsIgnoreCase("Pranav");
         System.out.println("Is Pranav? : " + isPranav);
+        
     }
     
 }
