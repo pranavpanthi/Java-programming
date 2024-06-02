@@ -1,4 +1,3 @@
-package Day6;
 import java.util.Scanner;
 public class GuesstheNumber {
     public static void main(String[] args) {
@@ -12,6 +11,6 @@ public class GuesstheNumber {
             System.out.println("Try again your luck is nearing!!!");
         }
         System.out.println(random);
-
+        
     }
 }
