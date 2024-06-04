@@ -10,6 +10,22 @@ public class Student {
     private String gender;
 
     private String address;
+
+    // default constructor
+    public Student() {
+        System.out.println("Default constructor called!");
+    }
+
+    // constructor overloading
+    // parameterized constructor
+    public Student(String name, int rollNumber, String department, String gender, String address) {
+        System.out.println("Parameterized constructor called!");
+        setName(name);
+        setRollNumber(rollNumber);
+        setDepartment(department);
+        setGender(gender);
+        this.address = address;
+    }
     
     public String getName() {
         return name;
@@ -49,5 +65,10 @@ public class Student {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public void printDetails() {
+        System.out.println("[ Name: " + getName() + ", Roll number: " + rollNumber + ", Department: " + department + 
+                            ", Gender: " + gender + ", Address: " + address + " ]");
     }
 }
