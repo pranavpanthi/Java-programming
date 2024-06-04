@@ -8,13 +8,14 @@ public class ConvertCurrency {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the currency NPR or USD ");
         String currency= input.nextLine();
-        switch (currency) {
+        switch (currency.toUpperCase()) {
             case "USD":
                 System.out.println("Enter US amount you want to change to NPR ");
                 float u = input.nextFloat();
                 float c = u*usd;
                 System.out.println("Your currency is NPR " + c);
                 break;
+
             case "NPR":
                 System.out.println("Enter NPR amount you want to change to US ");
                 float m = input.nextFloat();
