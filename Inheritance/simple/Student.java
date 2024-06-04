@@ -13,13 +13,18 @@ public class Student {
 
     // default constructor
     public Student() {
-        System.out.println("Default constructor called!");
+        System.out.println("Default constructor of Student called!");
+    }
+
+    public Student(String name) {
+        System.out.println("Parameterized constructor of Student which takes just name called!");
+        this.name = name;
     }
 
     // constructor overloading
     // parameterized constructor
     public Student(String name, int rollNumber, String department, String gender, String address) {
-        System.out.println("Parameterized constructor called!");
+        System.out.println("Parameterized constructor of Student called!");
         setName(name);
         setRollNumber(rollNumber);
         setDepartment(department);
@@ -67,8 +72,8 @@ public class Student {
         this.address = address;
     }
 
-    public void printDetails() {
-        System.out.println("[ Name: " + getName() + ", Roll number: " + rollNumber + ", Department: " + department + 
-                            ", Gender: " + gender + ", Address: " + address + " ]");
+    public String getDetails() {
+        return "[ Name: " + getName() + ", Roll number: " + rollNumber + ", Department: " + department + 
+                            ", Gender: " + gender + ", Address: " + address + " ]";
     }
 }
