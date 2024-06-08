@@ -6,5 +6,6 @@ public class Teacher {
         gender
         date of birth (date format)
         subjects (in a list - see Java ArrayList)
+        Also, have a constructor and getters and setters
     */
 }
