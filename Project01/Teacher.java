@@ -68,4 +68,5 @@ public class Teacher {
     public void setSubjects(ArrayList<String> subjects) {
         this.subjects = subjects;
     }
+
 }

@@ -31,4 +31,5 @@ public class FullTimeTeacher extends Teacher {
     public void setTotalHourOfLeave(int totalHourOfLeave) {
         this.totalHourOfLeave = totalHourOfLeave;
     }
+   
 }

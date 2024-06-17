@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.sql.Date;
+import java.util.Date;
 
 public class PartTimeTeacher extends Teacher {
     
@@ -11,8 +11,8 @@ public class PartTimeTeacher extends Teacher {
      * hourly rate
      * total teaching hours in a week
      */
-    public PartTimeTeacher(String name, String address, String gender, Date dateOfBirth,ArrayList<String> subjects, double hourlyRate, int totalTeachingHour) {
-        super(name, address, gender, dateOfBirth, subjects);
+    public PartTimeTeacher(String name, String address, String gender, java.util.Date date,ArrayList<String> subjects, double hourlyRate, int totalTeachingHour) {
+        super(name, address, gender, date, subjects);
         this.hourlyRate = hourlyRate;
         this.totalTeachingHour = totalTeachingHour;
 
@@ -33,4 +33,10 @@ public class PartTimeTeacher extends Teacher {
     public void setTotalTeachingHour(int totalTeachingHour) {
         this.totalTeachingHour = totalTeachingHour;
     } 
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Hourly Rate: " + hourlyRate + ", Total Teaching Hour: " + totalTeachingHour;
+    }
+
 }
