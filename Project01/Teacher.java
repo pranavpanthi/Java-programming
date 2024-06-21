@@ -1,4 +1,4 @@
-import java.sql.Date;
+import java.sql.Date; // todo: need to change it to java.util.Date as you are passing java.util.Date object from the main class
 import java.util.ArrayList;
 
 public class Teacher {
