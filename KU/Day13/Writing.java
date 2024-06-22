@@ -3,7 +3,7 @@ import java.io.FileWriter;
 public class Writing {
     public static void main(String[] args) {
         try{
-            FileWriter fw = new FileWriter("Output .txt", true);
+            FileWriter fw = new FileWriter("Output.txt", true);
             BufferedWriter bfw = new BufferedWriter(fw);
             String str1 = "This is to output lines into files\n";
             bfw.write(str1);

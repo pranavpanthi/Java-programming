@@ -20,17 +20,17 @@ public class Main {
         PartTimeTeacher ptTeacher2 = new PartTimeTeacher("Pramod Subedi", "Thimi", "Male", new Date(), subjects2, 30, 60);
         PartTimeTeacher ptTeacher3 = new PartTimeTeacher("Prahlad Panthi", "Camberra", "Male", new Date(), subjects1, 20, 50);
         
-        FullTimeTeacher ftTeacher1 = new FullTimeTeacher("Chandra Shekhar Panthi", "Balkot", "Male", new Date(), subjects1, 50000, 10);
-        FullTimeTeacher ftTeacher2 = new FullTimeTeacher("Sita Subedi Panthi", "Thimi", "Female", new Date(), subjects2, 200000, 20);
-        FullTimeTeacher ftTeacher3 = new FullTimeTeacher("Prahlad Panthi", "Balkot", "Male", new Date(), subjects3, 250000, 15);
+        // FullTimeTeacher ftTeacher1 = new FullTimeTeacher("Chandra Shekhar Panthi", "Balkot", "Male", new Date(), subjects1, 50000, 10);
+        // FullTimeTeacher ftTeacher2 = new FullTimeTeacher("Sita Subedi Panthi", "Thimi", "Female", new Date(), subjects2, 200000, 20);
+        // FullTimeTeacher ftTeacher3 = new FullTimeTeacher("Prahlad Panthi", "Balkot", "Male", new Date(), subjects3, 250000, 15);
         
         System.out.println(ptTeacher1);
         System.out.println(ptTeacher2);
         System.out.println(ptTeacher3);
 
-        System.out.println(ftTeacher1);
-        System.out.println(ftTeacher2);
-        System.out.println(ftTeacher3);
+        // System.out.println(ftTeacher1);
+        // System.out.println(ftTeacher2);
+        // System.out.println(ftTeacher3);
 
     }
 }

@@ -3,6 +3,8 @@ import java.util.Date;
 
 public class PartTimeTeacher extends Teacher {
     
+    private static java.sql.Date dateOfBirth;
+
     private double hourlyRate;
     
     private int totalTeachingHour;
@@ -11,8 +13,8 @@ public class PartTimeTeacher extends Teacher {
      * hourly rate
      * total teaching hours in a week
      */
-    public PartTimeTeacher(String name, String address, String gender, java.util.Date date,ArrayList<String> subjects, double hourlyRate, int totalTeachingHour) {
-        super(name, address, gender, date, subjects);
+    public PartTimeTeacher(String name, String address, String gender, java.util.Date date ,ArrayList<String> subjects, double hourlyRate, int totalTeachingHour) {
+        super(name, address, gender, dateOfBirth, subjects);
         this.hourlyRate = hourlyRate;
         this.totalTeachingHour = totalTeachingHour;
 

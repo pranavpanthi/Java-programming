@@ -28,7 +28,7 @@ public class Teacher {
         this.dateOfBirth = dateOfBirth;
         this.subjects = subjects;
     }
-
+    
     public String getName() {
         return name;
     }
