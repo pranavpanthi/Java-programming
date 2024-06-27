@@ -3,7 +3,7 @@ import java.io.*;
 public class NotepadManager {
     public static void main(String[] args) {
         try {
-            FileWriter fw = new FileWriter("Notepad.txt");
+            FileWriter fw = new FileWriter("notepad.txt");
             BufferedWriter bfw = new BufferedWriter(fw);
             String str1 = "---------------WELCOME !!!-------------\n";
             bfw.write(str1);
