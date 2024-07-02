@@ -5,13 +5,14 @@ public class NotepadManager {
         try {
             FileWriter fw = new FileWriter("notepad.txt");
             BufferedWriter bfw = new BufferedWriter(fw);
+            
             String str1 = "---------------WELCOME !!!-------------\n";
             bfw.write(str1);
-            String str2 = "------------------TO-------------------\n";
+            String str2 = "------------------To-------------------\n";
             bfw.write(str2);
             String str3 = "---------------NOTEPAD !!!-------------\n";
             bfw.write(str3);
-            
+
             System.out.println("File Written");
             bfw.close();
 
