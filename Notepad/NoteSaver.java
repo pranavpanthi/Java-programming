@@ -12,9 +12,9 @@ public class NoteSaver {
             switch (choice) {
                 case 1: 
                     try {
+                        input.nextLine();
                         System.out.println("Enter the note that you want to keep: ");
-                        String note = input.next();
-                        System.out.println();
+                        String note = input.nextLine();
 
                         System.out.println("Do you want to save the note in the notepad [Yes/No]: ");
                         String response = input.next();
